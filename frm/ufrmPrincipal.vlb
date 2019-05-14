@@ -1,0 +1,10 @@
+﻿[pnlListaLembretes]
+Coordinates=116,10,120,36
+
+[]
+Coordinates=115,56,91,36
+
+[btnConectar]
+Coordinates=10,10,96,58
+Visible=True
+

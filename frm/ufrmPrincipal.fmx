@@ -1,4 +1,4 @@
-object Form2: TForm2
+object frmPrincipal: TfrmPrincipal
   Left = 0
   Top = 0
   Caption = 'Form2'
@@ -13,6 +13,43 @@ object Form2: TForm2
     Size.Width = 641.000000000000000000
     Size.Height = 120.000000000000000000
     Size.PlatformDefault = False
-    TabOrder = 1
+    TabOrder = 0
+    object btnConectar: TSpeedButton
+      Position.X = 528.000000000000000000
+      Position.Y = 48.000000000000000000
+      Text = 'Conectar'
+      OnClick = btnConectarClick
+    end
+  end
+  object Grid1: TGrid
+    CanFocus = True
+    ClipChildren = True
+    Position.X = 32.000000000000000000
+    Position.Y = 136.000000000000000000
+    Size.Width = 585.000000000000000000
+    Size.Height = 100.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    RowCount = 0
+    Viewport.Width = 581.000000000000000000
+    Viewport.Height = 75.000000000000000000
+  end
+  object ds1: TDataSource
+    DataSet = dmConexao.fdqry1
+    Left = 120
+    Top = 168
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    UseAppManager = False
+    PromptDeleteUnused = False
+    Left = 204
+    Top = 253
+    object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      GridControl = Grid1
+      Columns = <>
+    end
   end
 end
